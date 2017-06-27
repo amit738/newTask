@@ -1,0 +1,60 @@
+/* KLOOFF Custom css */
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px
+}
+nav.navbar+div{
+  margin-top: 52px;
+}
+h3.column-heading{
+  color: #555;
+  background: #f0f0f0;
+  padding: 10px;
+  font-size: 1.333em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+ul.blog-feed-tabs{
+  margin: 0 auto;
+  padding: 0;
+  max-width: 410px;
+}
+ul.blog-feed-tabs li{
+  list-style: none;
+  float: left;
+}
+ul.blog-feed-tabs li a{
+  position: relative;
+  text-decoration: none;
+  padding: 8px 20px;
+  color: #555;
+  font-size: 1.167em;
+  font-weight: bold;
+}
+ul.blog-feed-tabs li a.active{
+  background: #21d998;
+  color: #fff;
+}
+ul.blog-feed-tabs li a.active:after{
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 8px 8px 0;
+  border-color: #21d998 transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  bottom: -8px;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+}
+.blog-post .blog-image{
+  width: 100%;
+  height: auto;
+  margin: 5px 0;
+}
+.blog-featured img.featured-image{
+  width: 100%;
+  margin-bottom: 10px;
+}

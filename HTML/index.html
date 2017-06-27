@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap 3 Fluid Layout Example</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Tutorial Republic</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="https://www.tutorialrepublic.com" target="_blank">Home</a></li>
+                <li><a href="https://www.tutorialrepublic.com/about-us.php" target="_blank">About</a></li>
+                <li><a href="https://www.tutorialrepublic.com/contact-us.php" target="_blank">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row page-container">
+        <div class="blog-feeds col-md-5 col-sm-12">
+            <h3 class="column-heading text-center">Feed</h3>
+            <ul class="blog-feed-tabs">
+              <li><a href="#">Newest</a></li>
+              <li><a href="#" class="active">Following</a></li>
+              <li><a href="#">Trending</a></li>
+              <li><a href="#">Most Shared</a></li>
+            </ul>
+            <article class="blog-post">
+              <img alt="Blog Image" src="images\blog-img1.jpeg" class="blog-image" />
+            </article>
+        </div>
+        <div class="blog-featured col-md-4 col-sm-12">
+            <h3 class="column-heading text-center">Featured</h3>
+            <img alt="Featured Image" src="images\featured-img1.jpeg" class="featured-image" />
+            <img alt="Featured Image" src="images\featured-img2.jpeg" class="featured-image" />
+            <img alt="Featured Image" src="images\featured-img3.jpeg" class="featured-image" />
+            <img alt="Featured Image" src="images\featured-img4.jpeg" class="featured-image" />                                    
+        </div>
+        <div class="blog-top-list col-md-3 col-sm-12">
+            <h3 class="column-heading text-center">Top 10</h3>
+
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-xs-12">
+            <footer>
+                <p>&copy; Copyright 2013 Tutorial Republic</p>
+            </footer>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
