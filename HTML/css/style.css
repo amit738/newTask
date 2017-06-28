@@ -3,6 +3,21 @@ body{
   font-family: 'Roboto', sans-serif;
   font-size: 12px
 }
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 nav.navbar+div{
   margin-top: 52px;
 }
@@ -15,7 +30,8 @@ h3.column-heading{
   text-transform: uppercase;
 }
 ul.blog-feed-tabs{
-  margin: 0 auto;
+  display: table;
+  margin: 18px auto 20px;
   padding: 0;
   max-width: 410px;
 }
@@ -49,6 +65,11 @@ ul.blog-feed-tabs li a.active:after{
   right: 0px;
   margin: 0 auto;
 }
+.blog-post{
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 100%;
+}
 .blog-post .blog-image{
   width: 100%;
   height: auto;
@@ -56,5 +77,152 @@ ul.blog-feed-tabs li a.active:after{
 }
 .blog-featured img.featured-image{
   width: 100%;
+  margin-bottom: 10px;
+}
+.blog-msg-con{
+  position: relative;
+}
+.blog-msg-text-con{
+  width: calc(100% - 75px);
+  display: inline-block;
+  float: right;
+  position: relative;
+}
+.blog-msg-text-con .blog-user-name{
+  font-size: 1.167em;
+  font-weight: bold;
+  color:#555;
+}
+.blog-msg-text-con .blog-user-name span{
+  color: #999;
+  padding-left: 8px;
+  padding-right: 2px;
+}
+.blog-msg-text-con .blog-user-name span:before{
+  content: "\2022";
+  padding-right: 5px;
+}
+.blog-msg-text-con .blog-user-location{
+  font-size: 1.167em;
+  color: #fa5f05;
+}
+.blog-msg-text-con .blog-user-location:before{
+  font-family: 'FontAwesome';
+  content: "\f041";
+  padding-right: 5px;
+}
+.blog-msg-text-con .posted-time{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 1.167em;
+  color: #777;
+}
+.blog-msg-text-con .posted-time:before{
+  font-family: 'FontAwesome';
+  content: "\f017";
+  padding-right: 5px;
+  font-size: 1.167em;
+  color: #777;
+}
+.blog-msg-con .blog-user-text{
+  position: absolute;
+  top: -20px;
+  font-size: 1.167em;
+  color: #555;
+  max-height: 42px;
+  overflow: hidden;
+  padding-right: 35px;
+}
+.blog-msg-con .more-option{
+  position: absolute;
+  top: -25px;
+  right: 0;
+  font-size: 1.167em;
+  color: #777;
+  cursor: pointer;
+}
+.blog-social{
+  margin-top: 40px;
+}
+.blog-social ul{
+  list-style: none;
+  display: table;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 0px;
+  float: left;
+  margin-right: 10px;
+}
+.blog-social ul:last-child{
+  float: right;
+  margin-right: 0px;
+}
+.blog-social ul li{
+  display: table-cell;
+  width: 70px;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+}
+.blog-social ul li i.fa-heart{
+  color: #fa5f05;
+}
+.blog-social ul li i.fa{
+  font-size: 2em;
+}
+.blog-social ul li:last-child{
+  border-left: 1px solid #ccc;
+  color: #777;
+}
+.blog-top-list ul.blog-feed-tabs{
+  max-width: 295px;
+}
+.blog-top-list ul.blog-feed-tabs li a{
+  padding: 6px 8px;
+}
+.top-category .img-box{
+  display: inline-block;
+}
+.candidate-details {
+    float: right;
+    width: calc(100% - 110px);
+}
+.cand-name {
+    font-size: 1.6em;
+    font-weight: 700;
+}
+.cand-address {
+    font-size: 1.167em;
+    color: #777;
+}
+.cand-detail {
+    font-size: 1.167em;
+}
+.cand-detail span {
+    color: #777;
+}
+.candidate-details .cand-social ul{
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  border: 1px solid #ccc;
+  margin: 10px 0 0;
+}
+.candidate-details .cand-social ul li{
+  display: inline-block;
+  font-size: 1em;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.candidate-details .cand-social ul.likes li:last-child{
+  cursor: default;
+  border-left: 1px solid #ccc;
+}
+.candidate-details .cand-social ul li i.fa-heart{
+  color: #fa5f05;
+  font-size: 1.167em;
+}
+.blog-top-list .top-category{
   margin-bottom: 10px;
 }
