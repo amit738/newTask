@@ -1,338 +1,1013 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap 3 Fluid Layout Example</title>
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
-<link href="fonts\font-awesome-4.7.0\font-awesome-4.7.0\css\font-awesome.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap 3 Fluid Layout Example</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  <link href="fonts\font-awesome-4.7.0\font-awesome-4.7.0\css\font-awesome.css" rel="stylesheet">
 
-<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
-    <!-- Brand and toggle get grouped for better mobile display -->
+  <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top navbar" role="navigation">
     <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Tutorial Republic</a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="https://www.tutorialrepublic.com" target="_blank">Home</a></li>
-                <li><a href="https://www.tutorialrepublic.com/about-us.php" target="_blank">About</a></li>
-                <li><a href="https://www.tutorialrepublic.com/contact-us.php" target="_blank">Contact</a></li>
+      <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand visible-md hidden-sm "><img src="images\logo.jpeg" alt="logo"></a>
+        <a href="#" class="mobile-logo navbar-brand hidden-md visible-sm visible-sm"><img src="images\sm.jpg" alt="logo"></a>
+      </div>
+      <div class="navbar-collapse">
+        <form class=" search_nav navbar-form navbar-left">
+          <div class="input-group">
+            <div class="talk-bubble tri-right border round btm-right-in">
+              <span class="count"> 3</span>
+            </div>
+            <div id="wrap" class="a1 visible-lg visible-md visible-sm">
+              <form action="" autocomplete="on">
+                <input id="search" class="txtBox" name="search" type="text" placeholder="What're we looking for ?">
+                <input id="search_submit" value="&#xf002;" type="button">
+              </form>
+            </div>
+          </div>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <div class="chat-bar visible-lg visible-md visible-sm">
+              <div class="back">
+                <img src="images\user-small-icon.jpeg" draggable="false"/>
+              </div>
+              <div class="name hidden-sm">JonJackson</div>
+            </div>
+          </li>
+          <li>
+            <button class="upload_ph btn btn-primary input-lg hidden-lg visible-md visible-sm" type="button">
+              <i class="fa fa-camera" aria-hidden="true"></i></button>
+              <button class="upload_ph btn btn-primary input-lg visible-lg hidden-md" type="button">
+                <i class="fa fa-camera" aria-hidden="true"></i> Upload Photo</button>
+              </li>
             </ul>
-        </div>
-    </div>
-</nav>
+          </div>
+        </nav>
 
-<div class="container-fluid">
-    <div class="row page-container">
-        <div class="blog-feeds col-md-5 col-sm-12">
-            <h3 class="column-heading text-center">Feed</h3>
-            <ul class="blog-feed-tabs">
-              <li><a href="#">Newest</a></li>
-              <li><a href="#" class="active">Following</a></li>
-              <li><a href="#">Trending</a></li>
-              <li><a href="#">Most Shared</a></li>
-            </ul>
-            <article class="blog-post">
-              <img alt="Blog Image" src="images\blog-img1.jpeg" class="blog-image" />
-              <div class="blog-msg-con">
-                <img src="images\blog-user1.jpeg" />
-                <div class="blog-msg-text-con">
-                  <div class="blog-user-name">
-                    Riley Lions <span>Son of</span> Cynthia Lion
+        <div class="container-fluid">
+          <div class="row page-container">
+            <div class="blog-feeds  col-lg-5 col-md-5 col-sm-12">
+              <h3 class="column-heading text-center">Feed</h3>
+              <ul class="blog-feed-tabs">
+                <li><a href="#">Newest</a></li>
+                <li><a href="#" class="active">Following</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Most Shared</a></li>
+              </ul>
+              <article class="blog-post">
+                <img alt="Blog Image" src="images\blog-img1.jpeg" class="blog-image" />
+                <div class="blog-con-hidden">
+                  <span class="blog-user">Riley Lions</span>
+                  <ul>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                </div>
+                <div class="blog-msg-con">
+                  <img src="images\blog-user1.jpeg" />
+                  <div class="blog-msg-text-con">
+                    <div class="blog-user-name">
+                      Riley Lions <span>Son of</span> Cynthia Lion
+                    </div>
+                    <span class="blog-user-location">Brooklyn, New York</span>
+                    <span class="posted-time">35m</span>
                   </div>
-                  <span class="blog-user-location">Brooklyn, New York</span>
-                  <span class="posted-time">35m</span>
                 </div>
-              </div>
-              <div class="blog-msg-con">
-                <div class="blog-msg-text-con">
-                  <p class="blog-user-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut consectetur adipisicing elit tempor labore et dolore magna aliqua.
-                  </p>
-                </div>
-                <span class="more-option fa fa-ellipsis-h"></span>
-              </div>
-              <div class="blog-social">
-                <ul>
-                  <li><i class="fa fa-heart" aria-hidden="true"></i></li>
-                  <li><span>2,123</span></li>
-                </ul>
-                <ul>
-                  <li><i class="fa fa-weixin" aria-hidden="true"></i></li>
-                  <li><span>2,123</span></li>
-                </ul>
-                <ul>
-                  <li><i class="fa fa-share" aria-hidden="true"></i></li>
-                  <li><span>2,123</span></li>
-                </ul>
-              </div>
-            </article>
-            <article class="blog-post">
-              <img alt="Blog Image" src="images\blog-img1.jpeg" class="blog-image" />
-              <div class="blog-msg-con">
-                <img src="images\blog-user1.jpeg" />
-                <div class="blog-msg-text-con">
-                  <div class="blog-user-name">
-                    Riley Lions <span>Son of</span> Cynthia Lion
+                <div class="blog-msg-con">
+                  <div class="blog-msg-text-con">
+                    <p class="blog-user-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut consectetur adipisicing elit tempor labore et dolore magna aliqua.
+                    </p>
                   </div>
-                  <span class="blog-user-location">Brooklyn, New York</span>
-                  <span class="posted-time">35m</span>
+                  <span class="more-option fa fa-ellipsis-h"></span>
+                </div>
+                <div class="blog-social">
+                  <ul>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                  <ul>
+                    <li><i class="fa fa-weixin" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                  <ul>
+                    <li><i class="fa fa-share" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                </div>
+              </article>
+              <article class="blog-post">
+                <img alt="Blog Image" src="images\blog-img2.jpeg" class="blog-image" />
+                <div class="blog-con-hidden">
+                  <span class="blog-user">Riley Lions</span>
+                  <ul>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                </div>
+                <div class="blog-msg-con">
+                  <img src="images\blog-user2.jpeg" />
+                  <div class="blog-msg-text-con">
+                    <div class="blog-user-name">
+                      Riley Lions <span>Son of</span> Cynthia Lion
+                    </div>
+                    <span class="blog-user-location">Brooklyn, New York</span>
+                    <span class="posted-time">35m</span>
+                  </div>
+                </div>
+                <div class="blog-msg-con">
+                  <div class="blog-msg-text-con">
+                    <p class="blog-user-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut consectetur adipisicing elit tempor labore et dolore magna aliqua.
+                    </p>
+                  </div>
+                  <span class="more-option fa fa-ellipsis-h"></span>
+                </div>
+                <div class="blog-social">
+                  <ul>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                  <ul>
+                    <li><i class="fa fa-weixin" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                  <ul>
+                    <li><i class="fa fa-share" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                </div>
+              </article>
+              <article class="blog-post">
+                <img alt="Blog Image" src="images\blog-img1.jpeg" class="blog-image" />
+                <div class="blog-con-hidden">
+                  <span class="blog-user">Riley Lions</span>
+                  <ul>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                </div>
+                <div class="blog-msg-con">
+                  <img src="images\blog-user1.jpeg" />
+                  <div class="blog-msg-text-con">
+                    <div class="blog-user-name">
+                      Riley Lions <span>Son of</span> Cynthia Lion
+                    </div>
+                    <span class="blog-user-location">Brooklyn, New York</span>
+                    <span class="posted-time">35m</span>
+                  </div>
+                </div>
+                <div class="blog-msg-con">
+                  <div class="blog-msg-text-con">
+                    <p class="blog-user-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut consectetur adipisicing elit tempor labore et dolore magna aliqua.
+                    </p>
+                  </div>
+                  <span class="more-option fa fa-ellipsis-h"></span>
+                </div>
+                <div class="blog-social">
+                  <ul>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                  <ul>
+                    <li><i class="fa fa-weixin" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                  <ul>
+                    <li><i class="fa fa-share" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                </div>
+              </article>
+              <article class="blog-post">
+                <img alt="Blog Image" src="images\blog-img2.jpeg" class="blog-image" />
+                <div class="blog-con-hidden">
+                  <span class="blog-user">Riley Lions</span>
+                  <ul>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                </div>
+                <div class="blog-msg-con">
+                  <img src="images\blog-user2.jpeg" />
+                  <div class="blog-msg-text-con">
+                    <div class="blog-user-name">
+                      Riley Lions <span>Son of</span> Cynthia Lion
+                    </div>
+                    <span class="blog-user-location">Brooklyn, New York</span>
+                    <span class="posted-time">35m</span>
+                  </div>
+                </div>
+                <div class="blog-msg-con">
+                  <div class="blog-msg-text-con">
+                    <p class="blog-user-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut consectetur adipisicing elit tempor labore et dolore magna aliqua.
+                    </p>
+                  </div>
+                  <span class="more-option fa fa-ellipsis-h"></span>
+                </div>
+                <div class="blog-social">
+                  <ul>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                  <ul>
+                    <li><i class="fa fa-weixin" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                  <ul>
+                    <li><i class="fa fa-share" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                </div>
+              </article>
+              <article class="blog-post">
+                <img alt="Blog Image" src="images\blog-img1.jpeg" class="blog-image" />
+                <div class="blog-con-hidden">
+                  <span class="blog-user">Riley Lions</span>
+                  <ul>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                </div>
+                <div class="blog-msg-con">
+                  <img src="images\blog-user1.jpeg" />
+                  <div class="blog-msg-text-con">
+                    <div class="blog-user-name">
+                      Riley Lions <span>Son of</span> Cynthia Lion
+                    </div>
+                    <span class="blog-user-location">Brooklyn, New York</span>
+                    <span class="posted-time">35m</span>
+                  </div>
+                </div>
+                <div class="blog-msg-con">
+                  <div class="blog-msg-text-con">
+                    <p class="blog-user-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut consectetur adipisicing elit tempor labore et dolore magna aliqua.
+                    </p>
+                  </div>
+                  <span class="more-option fa fa-ellipsis-h"></span>
+                </div>
+                <div class="blog-social">
+                  <ul>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                  <ul>
+                    <li><i class="fa fa-weixin" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                  <ul>
+                    <li><i class="fa fa-share" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                </div>
+              </article>
+              <article class="blog-post">
+                <img alt="Blog Image" src="images\blog-img2.jpeg" class="blog-image" />
+                <div class="blog-con-hidden">
+                  <span class="blog-user">Riley Lions</span>
+                  <ul>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                </div>
+                <div class="blog-msg-con">
+                  <img src="images\blog-user2.jpeg" />
+                  <div class="blog-msg-text-con">
+                    <div class="blog-user-name">
+                      Riley Lions <span>Son of</span> Cynthia Lion
+                    </div>
+                    <span class="blog-user-location">Brooklyn, New York</span>
+                    <span class="posted-time">35m</span>
+                  </div>
+                </div>
+                <div class="blog-msg-con">
+                  <div class="blog-msg-text-con">
+                    <p class="blog-user-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut consectetur adipisicing elit tempor labore et dolore magna aliqua.
+                    </p>
+                  </div>
+                  <span class="more-option fa fa-ellipsis-h"></span>
+                </div>
+                <div class="blog-social">
+                  <ul>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                  <ul>
+                    <li><i class="fa fa-weixin" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                  <ul>
+                    <li><i class="fa fa-share" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                </div>
+              </article>
+              <article class="blog-post">
+                <img alt="Blog Image" src="images\blog-img1.jpeg" class="blog-image" />
+                <div class="blog-con-hidden">
+                  <span class="blog-user">Riley Lions</span>
+                  <ul>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                </div>
+                <div class="blog-msg-con">
+                  <img src="images\blog-user1.jpeg" />
+                  <div class="blog-msg-text-con">
+                    <div class="blog-user-name">
+                      Riley Lions <span>Son of</span> Cynthia Lion
+                    </div>
+                    <span class="blog-user-location">Brooklyn, New York</span>
+                    <span class="posted-time">35m</span>
+                  </div>
+                </div>
+                <div class="blog-msg-con">
+                  <div class="blog-msg-text-con">
+                    <p class="blog-user-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut consectetur adipisicing elit tempor labore et dolore magna aliqua.
+                    </p>
+                  </div>
+                  <span class="more-option fa fa-ellipsis-h"></span>
+                </div>
+                <div class="blog-social">
+                  <ul>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                  <ul>
+                    <li><i class="fa fa-weixin" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                  <ul>
+                    <li><i class="fa fa-share" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                </div>
+              </article>
+              <article class="blog-post">
+                <img alt="Blog Image" src="images\blog-img2.jpeg" class="blog-image" />
+                <div class="blog-con-hidden">
+                  <span class="blog-user">Riley Lions</span>
+                  <ul>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                </div>
+                <div class="blog-msg-con">
+                  <img src="images\blog-user2.jpeg" />
+                  <div class="blog-msg-text-con">
+                    <div class="blog-user-name">
+                      Riley Lions <span>Son of</span> Cynthia Lion
+                    </div>
+                    <span class="blog-user-location">Brooklyn, New York</span>
+                    <span class="posted-time">35m</span>
+                  </div>
+                </div>
+                <div class="blog-msg-con">
+                  <div class="blog-msg-text-con">
+                    <p class="blog-user-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut consectetur adipisicing elit tempor labore et dolore magna aliqua.
+                    </p>
+                  </div>
+                  <span class="more-option fa fa-ellipsis-h"></span>
+                </div>
+                <div class="blog-social">
+                  <ul>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                  <ul>
+                    <li><i class="fa fa-weixin" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                  <ul>
+                    <li><i class="fa fa-share" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                </div>
+              </article>
+              <article class="blog-post">
+                <img alt="Blog Image" src="images\blog-img1.jpeg" class="blog-image" />
+                <div class="blog-con-hidden">
+                  <span class="blog-user">Riley Lions</span>
+                  <ul>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                </div>
+                <div class="blog-msg-con">
+                  <img src="images\blog-user1.jpeg" />
+                  <div class="blog-msg-text-con">
+                    <div class="blog-user-name">
+                      Riley Lions <span>Son of</span> Cynthia Lion
+                    </div>
+                    <span class="blog-user-location">Brooklyn, New York</span>
+                    <span class="posted-time">35m</span>
+                  </div>
+                </div>
+                <div class="blog-msg-con">
+                  <div class="blog-msg-text-con">
+                    <p class="blog-user-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut consectetur adipisicing elit tempor labore et dolore magna aliqua.
+                    </p>
+                  </div>
+                  <span class="more-option fa fa-ellipsis-h"></span>
+                </div>
+                <div class="blog-social">
+                  <ul>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                  <ul>
+                    <li><i class="fa fa-weixin" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                  <ul>
+                    <li><i class="fa fa-share" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                </div>
+              </article>
+              <article class="blog-post">
+                <img alt="Blog Image" src="images\blog-img2.jpeg" class="blog-image" />
+                <div class="blog-con-hidden">
+                  <span class="blog-user">Riley Lions</span>
+                  <ul>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                </div>
+                <div class="blog-msg-con">
+                  <img src="images\blog-user2.jpeg" />
+                  <div class="blog-msg-text-con">
+                    <div class="blog-user-name">
+                      Riley Lions <span>Son of</span> Cynthia Lion
+                    </div>
+                    <span class="blog-user-location">Brooklyn, New York</span>
+                    <span class="posted-time">35m</span>
+                  </div>
+                </div>
+                <div class="blog-msg-con">
+                  <div class="blog-msg-text-con">
+                    <p class="blog-user-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut consectetur adipisicing elit tempor labore et dolore magna aliqua.
+                    </p>
+                  </div>
+                  <span class="more-option fa fa-ellipsis-h"></span>
+                </div>
+                <div class="blog-social">
+                  <ul>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                  <ul>
+                    <li><i class="fa fa-weixin" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                  <ul>
+                    <li><i class="fa fa-share" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                </div>
+              </article>
+              <article class="blog-post">
+                <img alt="Blog Image" src="images\blog-img1.jpeg" class="blog-image" />
+                <div class="blog-con-hidden">
+                  <span class="blog-user">Riley Lions</span>
+                  <ul>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                </div>
+                <div class="blog-msg-con">
+                  <img src="images\blog-user1.jpeg" />
+                  <div class="blog-msg-text-con">
+                    <div class="blog-user-name">
+                      Riley Lions <span>Son of</span> Cynthia Lion
+                    </div>
+                    <span class="blog-user-location">Brooklyn, New York</span>
+                    <span class="posted-time">35m</span>
+                  </div>
+                </div>
+                <div class="blog-msg-con">
+                  <div class="blog-msg-text-con">
+                    <p class="blog-user-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut consectetur adipisicing elit tempor labore et dolore magna aliqua.
+                    </p>
+                  </div>
+                  <span class="more-option fa fa-ellipsis-h"></span>
+                </div>
+                <div class="blog-social">
+                  <ul>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                  <ul>
+                    <li><i class="fa fa-weixin" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                  <ul>
+                    <li><i class="fa fa-share" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                </div>
+              </article>
+              <article class="blog-post">
+                <img alt="Blog Image" src="images\blog-img2.jpeg" class="blog-image" />
+                <div class="blog-con-hidden">
+                  <span class="blog-user">Riley Lions</span>
+                  <ul>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                </div>
+                <div class="blog-msg-con">
+                  <img src="images\blog-user2.jpeg" />
+                  <div class="blog-msg-text-con">
+                    <div class="blog-user-name">
+                      Riley Lions <span>Son of</span> Cynthia Lion
+                    </div>
+                    <span class="blog-user-location">Brooklyn, New York</span>
+                    <span class="posted-time">35m</span>
+                  </div>
+                </div>
+                <div class="blog-msg-con">
+                  <div class="blog-msg-text-con">
+                    <p class="blog-user-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut consectetur adipisicing elit tempor labore et dolore magna aliqua.
+                    </p>
+                  </div>
+                  <span class="more-option fa fa-ellipsis-h"></span>
+                </div>
+                <div class="blog-social">
+                  <ul>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                  <ul>
+                    <li><i class="fa fa-weixin" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                  <ul>
+                    <li><i class="fa fa-share" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                </div>
+              </article>
+              <article class="blog-post">
+                <img alt="Blog Image" src="images\blog-img1.jpeg" class="blog-image" />
+                <div class="blog-con-hidden">
+                  <span class="blog-user">Riley Lions</span>
+                  <ul>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                </div>
+                <div class="blog-msg-con">
+                  <img src="images\blog-user1.jpeg" />
+                  <div class="blog-msg-text-con">
+                    <div class="blog-user-name">
+                      Riley Lions <span>Son of</span> Cynthia Lion
+                    </div>
+                    <span class="blog-user-location">Brooklyn, New York</span>
+                    <span class="posted-time">35m</span>
+                  </div>
+                </div>
+                <div class="blog-msg-con">
+                  <div class="blog-msg-text-con">
+                    <p class="blog-user-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut consectetur adipisicing elit tempor labore et dolore magna aliqua.
+                    </p>
+                  </div>
+                  <span class="more-option fa fa-ellipsis-h"></span>
+                </div>
+                <div class="blog-social">
+                  <ul>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                  <ul>
+                    <li><i class="fa fa-weixin" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                  <ul>
+                    <li><i class="fa fa-share" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                </div>
+              </article>
+              <article class="blog-post">
+                <img alt="Blog Image" src="images\blog-img2.jpeg" class="blog-image" />
+                <div class="blog-con-hidden">
+                  <span class="blog-user">Riley Lions</span>
+                  <ul>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                </div>
+                <div class="blog-msg-con">
+                  <img src="images\blog-user2.jpeg" />
+                  <div class="blog-msg-text-con">
+                    <div class="blog-user-name">
+                      Riley Lions <span>Son of</span> Cynthia Lion
+                    </div>
+                    <span class="blog-user-location">Brooklyn, New York</span>
+                    <span class="posted-time">35m</span>
+                  </div>
+                </div>
+                <div class="blog-msg-con">
+                  <div class="blog-msg-text-con">
+                    <p class="blog-user-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut consectetur adipisicing elit tempor labore et dolore magna aliqua.
+                    </p>
+                  </div>
+                  <span class="more-option fa fa-ellipsis-h"></span>
+                </div>
+                <div class="blog-social">
+                  <ul>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                  <ul>
+                    <li><i class="fa fa-weixin" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                  <ul>
+                    <li><i class="fa fa-share" aria-hidden="true"></i></li>
+                    <li><span>2,123</span></li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <div class="blog-featured  col-lg-4 col-md-3 col-sm-12">
+              <h3 class="column-heading text-center">Featured</h3>
+              <img alt="Featured Image" src="images\featured-img1.jpeg" class="featured-image" />
+              <img alt="Featured Image" src="images\featured-img2.jpeg" class="featured-image" />
+              <img alt="Featured Image" src="images\featured-img3.jpeg" class="featured-image" />
+              <img alt="Featured Image" src="images\featured-img4.jpeg" class="featured-image" />
+              <img alt="Featured Image" src="images\featured-img1.jpeg" class="featured-image" />
+              <img alt="Featured Image" src="images\featured-img2.jpeg" class="featured-image" />
+              <img alt="Featured Image" src="images\featured-img3.jpeg" class="featured-image" />
+              <img alt="Featured Image" src="images\featured-img4.jpeg" class="featured-image" />
+            </div>
+            <div class="blog-top-list  col-lg-3 col-md-4 col-sm-12">
+              <h3 class="column-heading text-center">Top 10</h3>
+              <ul class="blog-feed-tabs">
+                <li><a href="#">Today</a></li>
+                <li><a href="#" class="active">This week</a></li>
+                <li><a href="#">This month</a></li>
+                <li><a href="#">All time</a></li>
+              </ul>
+              <div class="top-category">
+                <div class="img-box">
+                  <img alt="Top Category" src="images\news-feed-img1.jpeg" />
+                </div>
+                <div class="candidate-details">
+                  <div class="cand-name">Red Jackson</div>
+                  <div class="cand-address">Brooklyn, New York</div>
+                  <div class="cand-detail"><span>Son of</span> John Jackson</div>
+                  <div class="cand-social">
+                    <ul class="likes">
+                      <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                      <li><span>32,167 Likes</span></li>
+                    </ul>
+                    <ul class="pull-right">
+                      <li><i class="fa fa-share" aria-hidden="true"></i></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div class="blog-msg-con">
-                <div class="blog-msg-text-con">
-                  <p class="blog-user-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut consectetur adipisicing elit tempor labore et dolore magna aliqua.
-                  </p>
+              <div class="top-category">
+                <div class="img-box">
+                  <img alt="Top Category" src="images\news-feed-img1.jpeg" />
                 </div>
-                <span class="more-option fa fa-ellipsis-h"></span>
+                <div class="candidate-details">
+                  <div class="cand-name">Red Jackson</div>
+                  <div class="cand-address">Brooklyn, New York</div>
+                  <div class="cand-detail"><span>Son of</span> John Jackson</div>
+                  <div class="cand-social">
+                    <ul class="likes">
+                      <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                      <li><span>32,167 Likes</span></li>
+                    </ul>
+                    <ul class="pull-right">
+                      <li><i class="fa fa-share" aria-hidden="true"></i></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <div class="blog-social">
-                <ul>
-                  <li><i class="fa fa-heart" aria-hidden="true"></i></li>
-                  <li><span>2,123</span></li>
-                </ul>
-                <ul>
-                  <li><i class="fa fa-weixin" aria-hidden="true"></i></li>
-                  <li><span>2,123</span></li>
-                </ul>
-                <ul>
-                  <li><i class="fa fa-share" aria-hidden="true"></i></li>
-                  <li><span>2,123</span></li>
-                </ul>
+              <div class="top-category">
+                <div class="img-box">
+                  <img alt="Top Category" src="images\news-feed-img1.jpeg" />
+                </div>
+                <div class="candidate-details">
+                  <div class="cand-name">Red Jackson</div>
+                  <div class="cand-address">Brooklyn, New York</div>
+                  <div class="cand-detail"><span>Son of</span> John Jackson</div>
+                  <div class="cand-social">
+                    <ul class="likes">
+                      <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                      <li><span>32,167 Likes</span></li>
+                    </ul>
+                    <ul class="pull-right">
+                      <li><i class="fa fa-share" aria-hidden="true"></i></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </article>
+              <div class="top-category">
+                <div class="img-box">
+                  <img alt="Top Category" src="images\news-feed-img1.jpeg" />
+                </div>
+                <div class="candidate-details">
+                  <div class="cand-name">Red Jackson</div>
+                  <div class="cand-address">Brooklyn, New York</div>
+                  <div class="cand-detail"><span>Son of</span> John Jackson</div>
+                  <div class="cand-social">
+                    <ul class="likes">
+                      <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                      <li><span>32,167 Likes</span></li>
+                    </ul>
+                    <ul class="pull-right">
+                      <li><i class="fa fa-share" aria-hidden="true"></i></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="top-category">
+                <div class="img-box">
+                  <img alt="Top Category" src="images\news-feed-img1.jpeg" />
+                </div>
+                <div class="candidate-details">
+                  <div class="cand-name">Red Jackson</div>
+                  <div class="cand-address">Brooklyn, New York</div>
+                  <div class="cand-detail"><span>Son of</span> John Jackson</div>
+                  <div class="cand-social">
+                    <ul class="likes">
+                      <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                      <li><span>32,167 Likes</span></li>
+                    </ul>
+                    <ul class="pull-right">
+                      <li><i class="fa fa-share" aria-hidden="true"></i></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="top-category">
+                <div class="img-box">
+                  <img alt="Top Category" src="images\news-feed-img1.jpeg" />
+                </div>
+                <div class="candidate-details">
+                  <div class="cand-name">Red Jackson</div>
+                  <div class="cand-address">Brooklyn, New York</div>
+                  <div class="cand-detail"><span>Son of</span> John Jackson</div>
+                  <div class="cand-social">
+                    <ul class="likes">
+                      <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                      <li><span>32,167 Likes</span></li>
+                    </ul>
+                    <ul class="pull-right">
+                      <li><i class="fa fa-share" aria-hidden="true"></i></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="top-category">
+                <div class="img-box">
+                  <img alt="Top Category" src="images\news-feed-img1.jpeg" />
+                </div>
+                <div class="candidate-details">
+                  <div class="cand-name">Red Jackson</div>
+                  <div class="cand-address">Brooklyn, New York</div>
+                  <div class="cand-detail"><span>Son of</span> John Jackson</div>
+                  <div class="cand-social">
+                    <ul class="likes">
+                      <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                      <li><span>32,167 Likes</span></li>
+                    </ul>
+                    <ul class="pull-right">
+                      <li><i class="fa fa-share" aria-hidden="true"></i></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="top-category">
+                <div class="img-box">
+                  <img alt="Top Category" src="images\news-feed-img1.jpeg" />
+                </div>
+                <div class="candidate-details">
+                  <div class="cand-name">Red Jackson</div>
+                  <div class="cand-address">Brooklyn, New York</div>
+                  <div class="cand-detail"><span>Son of</span> John Jackson</div>
+                  <div class="cand-social">
+                    <ul class="likes">
+                      <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                      <li><span>32,167 Likes</span></li>
+                    </ul>
+                    <ul class="pull-right">
+                      <li><i class="fa fa-share" aria-hidden="true"></i></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="top-category">
+                <div class="img-box">
+                  <img alt="Top Category" src="images\news-feed-img1.jpeg" />
+                </div>
+                <div class="candidate-details">
+                  <div class="cand-name">Red Jackson</div>
+                  <div class="cand-address">Brooklyn, New York</div>
+                  <div class="cand-detail"><span>Son of</span> John Jackson</div>
+                  <div class="cand-social">
+                    <ul class="likes">
+                      <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                      <li><span>32,167 Likes</span></li>
+                    </ul>
+                    <ul class="pull-right">
+                      <li><i class="fa fa-share" aria-hidden="true"></i></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="top-category">
+                <div class="img-box">
+                  <img alt="Top Category" src="images\news-feed-img1.jpeg" />
+                </div>
+                <div class="candidate-details">
+                  <div class="cand-name">Red Jackson</div>
+                  <div class="cand-address">Brooklyn, New York</div>
+                  <div class="cand-detail"><span>Son of</span> John Jackson</div>
+                  <div class="cand-social">
+                    <ul class="likes">
+                      <li><i class="fa fa-heart" aria-hidden="true"></i></li>
+                      <li><span>32,167 Likes</span></li>
+                    </ul>
+                    <ul class="pull-right">
+                      <li><i class="fa fa-share" aria-hidden="true"></i></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <h3 class="column-heading leaderboard text-center">Leaderboard</h3>
+              <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#leaderVote">VOTE</a></li>
+                <li><a data-toggle="tab" href="#leaderLatest">THE LATEST</a></li>
+              </ul>
+              <div class="tab-content leader-tab">
+                <div id="leaderVote" class="tab-pane fade in active">
+                  <div class="leaderContent">
+                    <div class="img-box">
+                      <span class="lead-index">1</span>
+                      <img alt="Top Category" src="images\leaderboard-topper-1.jpeg" />
+                    </div>
+                    <div class="leader-details">
+                      <div class="leader-name">Red Jackson</div>
+                      <div class="leader-detail"><span>Son of</span> John Jackson</div>
+                      <img src="images\progress.png" />
+                      <div class="leader-rating">21,231 Votes</div>
+                    </div>
+                  </div>
+                  <div class="leaderContent">
+                    <div class="img-box">
+                      <span class="lead-index">2</span>
+                      <img alt="Top Category" src="images\leaderboard-topper-2.jpeg" />
+                    </div>
+                    <div class="leader-details">
+                      <div class="leader-name">Red Jackson</div>
+                      <div class="leader-detail"><span>Son of</span> John Jackson</div>
+                      <img src="images\progress.png" />
+                      <div class="leader-rating">21,231 Votes</div>
+                    </div>
+                  </div>
+                  <div class="leaderContent">
+                    <div class="img-box">
+                      <span class="lead-index">3</span>
+                      <img alt="Top Category" src="images\leaderboard-topper-3.jpeg" />
+                    </div>
+                    <div class="leader-details">
+                      <div class="leader-name">Red Jackson</div>
+                      <div class="leader-detail"><span>Son of</span> John Jackson</div>
+                      <img src="images\progress.png" />
+                      <div class="leader-rating">21,231 Votes</div>
+                    </div>
+                  </div>
+                  <div class="leaderContent">
+                    <div class="img-box">
+                      <span class="lead-index">4</span>
+                      <img alt="Top Category" src="images\leaderboard-topper-1.jpeg" />
+                    </div>
+                    <div class="leader-details">
+                      <div class="leader-name">Red Jackson</div>
+                      <div class="leader-detail"><span>Son of</span> John Jackson</div>
+                      <img src="images\progress.png" />
+                      <div class="leader-rating">21,231 Votes</div>
+                    </div>
+                  </div>
+                  <div class="leaderContent">
+                    <div class="img-box">
+                      <span class="lead-index">5</span>
+                      <img alt="Top Category" src="images\leaderboard-topper-2.jpeg" />
+                    </div>
+                    <div class="leader-details">
+                      <div class="leader-name">Red Jackson</div>
+                      <div class="leader-detail"><span>Son of</span> John Jackson</div>
+                      <img src="images\progress.png" />
+                      <div class="leader-rating">21,231 Votes</div>
+                    </div>
+                  </div>
+                  <div class="leaderContent">
+                    <div class="img-box">
+                      <span class="lead-index">1</span>
+                      <img alt="Top Category" src="images\leaderboard-topper-1.jpeg" />
+                    </div>
+                    <div class="leader-details">
+                      <div class="leader-name">Red Jackson</div>
+                      <div class="leader-detail"><span>Son of</span> John Jackson</div>
+                      <img src="images\progress.png" />
+                      <div class="leader-rating">21,231 Votes</div>
+                    </div>
+                  </div>
+                  <div class="leaderContent">
+                    <div class="img-box">
+                      <span class="lead-index">1</span>
+                      <img alt="Top Category" src="images\leaderboard-topper-1.jpeg" />
+                    </div>
+                    <div class="leader-details">
+                      <div class="leader-name">Red Jackson</div>
+                      <div class="leader-detail"><span>Son of</span> John Jackson</div>
+                      <img src="images\progress.png" />
+                      <div class="leader-rating">21,231 Votes</div>
+                    </div>
+                  </div>
+                  <div class="leaderContent">
+                    <div class="img-box">
+                      <span class="lead-index">1</span>
+                      <img alt="Top Category" src="images\leaderboard-topper-1.jpeg" />
+                    </div>
+                    <div class="leader-details">
+                      <div class="leader-name">Red Jackson</div>
+                      <div class="leader-detail"><span>Son of</span> John Jackson</div>
+                      <img src="images\progress.png" />
+                      <div class="leader-rating">21,231 Votes</div>
+                    </div>
+                  </div>
+                </div>
+                <div id="leaderLatest" class="tab-pane fade">
+                  <div class="leaderContent">
+                    <div class="img-box">
+                      <span class="lead-index">1</span>
+                      <img alt="Top Category" src="images\leaderboard-topper-3.jpeg" />
+                    </div>
+                    <div class="leader-details">
+                      <div class="leader-name">Red Jackson</div>
+                      <div class="leader-detail"><span>Son of</span> John Jackson</div>
+                      <img src="images\progress.png" />
+                      <div class="leader-rating">21,231 Votes</div>
+                    </div>
+                  </div>
+                  <div class="leaderContent">
+                    <div class="img-box">
+                      <span class="lead-index">2</span>
+                      <img alt="Top Category" src="images\leaderboard-topper-2.jpeg" />
+                    </div>
+                    <div class="leader-details">
+                      <div class="leader-name">Red Jackson</div>
+                      <div class="leader-detail"><span>Son of</span> John Jackson</div>
+                      <img src="images\progress.png" />
+                      <div class="leader-rating">21,231 Votes</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-xs-12">
+              <footer>
+                <p>&copy; Copyright 2017 XYZ </p>
+              </footer>
+            </div>
+          </div>
         </div>
-        <div class="blog-featured col-md-4 col-sm-12">
-            <h3 class="column-heading text-center">Featured</h3>
-            <img alt="Featured Image" src="images\featured-img1.jpeg" class="featured-image" />
-            <img alt="Featured Image" src="images\featured-img2.jpeg" class="featured-image" />
-            <img alt="Featured Image" src="images\featured-img3.jpeg" class="featured-image" />
-            <img alt="Featured Image" src="images\featured-img4.jpeg" class="featured-image" />
-        </div>
-        <div class="blog-top-list col-md-3 col-sm-12">
-            <h3 class="column-heading text-center">Top 10</h3>
-            <ul class="blog-feed-tabs">
-              <li><a href="#">Today</a></li>
-              <li><a href="#" class="active">This week</a></li>
-              <li><a href="#">This month</a></li>
-              <li><a href="#">All time</a></li>
-            </ul>
-            <div class="top-category">
-              <div class="img-box">
-                <img alt="Top Category" src="images\news-feed-img1.jpeg" />
-              </div>
-              <div class="candidate-details">
-                <div class="cand-name">Red Jackson</div>
-                <div class="cand-address">Brooklyn, New York</div>
-                <div class="cand-detail"><span>Son of</span> John Jackson</div>
-                <div class="cand-social">
-                  <ul class="likes">
-                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
-                    <li><span>32,167 Likes</span></li>
-                  </ul>
-                  <ul class="pull-right">
-                    <li><i class="fa fa-share" aria-hidden="true"></i></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="top-category">
-              <div class="img-box">
-                <img alt="Top Category" src="images\news-feed-img1.jpeg" />
-              </div>
-              <div class="candidate-details">
-                <div class="cand-name">Red Jackson</div>
-                <div class="cand-address">Brooklyn, New York</div>
-                <div class="cand-detail"><span>Son of</span> John Jackson</div>
-                <div class="cand-social">
-                  <ul class="likes">
-                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
-                    <li><span>32,167 Likes</span></li>
-                  </ul>
-                  <ul class="pull-right">
-                    <li><i class="fa fa-share" aria-hidden="true"></i></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="top-category">
-              <div class="img-box">
-                <img alt="Top Category" src="images\news-feed-img1.jpeg" />
-              </div>
-              <div class="candidate-details">
-                <div class="cand-name">Red Jackson</div>
-                <div class="cand-address">Brooklyn, New York</div>
-                <div class="cand-detail"><span>Son of</span> John Jackson</div>
-                <div class="cand-social">
-                  <ul class="likes">
-                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
-                    <li><span>32,167 Likes</span></li>
-                  </ul>
-                  <ul class="pull-right">
-                    <li><i class="fa fa-share" aria-hidden="true"></i></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="top-category">
-              <div class="img-box">
-                <img alt="Top Category" src="images\news-feed-img1.jpeg" />
-              </div>
-              <div class="candidate-details">
-                <div class="cand-name">Red Jackson</div>
-                <div class="cand-address">Brooklyn, New York</div>
-                <div class="cand-detail"><span>Son of</span> John Jackson</div>
-                <div class="cand-social">
-                  <ul class="likes">
-                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
-                    <li><span>32,167 Likes</span></li>
-                  </ul>
-                  <ul class="pull-right">
-                    <li><i class="fa fa-share" aria-hidden="true"></i></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="top-category">
-              <div class="img-box">
-                <img alt="Top Category" src="images\news-feed-img1.jpeg" />
-              </div>
-              <div class="candidate-details">
-                <div class="cand-name">Red Jackson</div>
-                <div class="cand-address">Brooklyn, New York</div>
-                <div class="cand-detail"><span>Son of</span> John Jackson</div>
-                <div class="cand-social">
-                  <ul class="likes">
-                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
-                    <li><span>32,167 Likes</span></li>
-                  </ul>
-                  <ul class="pull-right">
-                    <li><i class="fa fa-share" aria-hidden="true"></i></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="top-category">
-              <div class="img-box">
-                <img alt="Top Category" src="images\news-feed-img1.jpeg" />
-              </div>
-              <div class="candidate-details">
-                <div class="cand-name">Red Jackson</div>
-                <div class="cand-address">Brooklyn, New York</div>
-                <div class="cand-detail"><span>Son of</span> John Jackson</div>
-                <div class="cand-social">
-                  <ul class="likes">
-                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
-                    <li><span>32,167 Likes</span></li>
-                  </ul>
-                  <ul class="pull-right">
-                    <li><i class="fa fa-share" aria-hidden="true"></i></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="top-category">
-              <div class="img-box">
-                <img alt="Top Category" src="images\news-feed-img1.jpeg" />
-              </div>
-              <div class="candidate-details">
-                <div class="cand-name">Red Jackson</div>
-                <div class="cand-address">Brooklyn, New York</div>
-                <div class="cand-detail"><span>Son of</span> John Jackson</div>
-                <div class="cand-social">
-                  <ul class="likes">
-                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
-                    <li><span>32,167 Likes</span></li>
-                  </ul>
-                  <ul class="pull-right">
-                    <li><i class="fa fa-share" aria-hidden="true"></i></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="top-category">
-              <div class="img-box">
-                <img alt="Top Category" src="images\news-feed-img1.jpeg" />
-              </div>
-              <div class="candidate-details">
-                <div class="cand-name">Red Jackson</div>
-                <div class="cand-address">Brooklyn, New York</div>
-                <div class="cand-detail"><span>Son of</span> John Jackson</div>
-                <div class="cand-social">
-                  <ul class="likes">
-                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
-                    <li><span>32,167 Likes</span></li>
-                  </ul>
-                  <ul class="pull-right">
-                    <li><i class="fa fa-share" aria-hidden="true"></i></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="top-category">
-              <div class="img-box">
-                <img alt="Top Category" src="images\news-feed-img1.jpeg" />
-              </div>
-              <div class="candidate-details">
-                <div class="cand-name">Red Jackson</div>
-                <div class="cand-address">Brooklyn, New York</div>
-                <div class="cand-detail"><span>Son of</span> John Jackson</div>
-                <div class="cand-social">
-                  <ul class="likes">
-                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
-                    <li><span>32,167 Likes</span></li>
-                  </ul>
-                  <ul class="pull-right">
-                    <li><i class="fa fa-share" aria-hidden="true"></i></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="top-category">
-              <div class="img-box">
-                <img alt="Top Category" src="images\news-feed-img1.jpeg" />
-              </div>
-              <div class="candidate-details">
-                <div class="cand-name">Red Jackson</div>
-                <div class="cand-address">Brooklyn, New York</div>
-                <div class="cand-detail"><span>Son of</span> John Jackson</div>
-                <div class="cand-social">
-                  <ul class="likes">
-                    <li><i class="fa fa-heart" aria-hidden="true"></i></li>
-                    <li><span>32,167 Likes</span></li>
-                  </ul>
-                  <ul class="pull-right">
-                    <li><i class="fa fa-share" aria-hidden="true"></i></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <div class="row">
-        <div class="col-xs-12">
-            <footer>
-                <p>&copy; Copyright 2013 Tutorial Republic</p>
-            </footer>
-        </div>
-    </div>
-</div>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-</body>
-</html>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+      </body>
+      </html>
